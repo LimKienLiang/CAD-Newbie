@@ -1,12 +1,12 @@
 module ASR (
   input shift,clk,rst,load,
-  input [3:0]Sum,Q,
+  input [3:0] Sum,Q,
   output reg Q1,Q0,
-  output reg [3:0]A,
-  output reg [7:0]Dout
+  output reg [3:0] A,
+  output reg [7:0] Dout
 );
   
-  reg [7:0]Din;
+  reg [7:0] Din;
   reg MSBin;
   assign MSBout = Dout[7];
   
