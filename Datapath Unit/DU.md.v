@@ -3,7 +3,7 @@ module DU (
   input [3:0] CV,
   input [3:0] Min, Q,
   output Q1, Q0, count,
-  ouput [7:0] Dout
+  output [7:0] Dout
 );
   wire [3:0] Mout, A, Sum;
   wire rst, add, sub, load, shift, dc;
