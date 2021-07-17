@@ -47,7 +47,6 @@ module CU (
 endmodule
 ```
 
-```
 | State | rst | add | sub | load | shift | dc | CV |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | S0 | 1 | 0 | 0 | 0 | 0 | 0 | 6'h20 |
@@ -59,6 +58,5 @@ endmodule
 | S6 | 0 | 0 | 0 | 0 | 0 | 0 | 6'h00 |
 | S7 | 0 | 0 | 0 | 1 | 0 | 0 | 6'h04 |
 | S0 | 0 | 0 | 0 | 1 | 0 | 0 | 6'h04 |
-```
 
 The table shows the states and the respective activated control signals. A signal vector (CV) is used because there are a lot of control signals. While applying CV, the sequence of control signals is fixed. The sequence is fixed as 'rst', 'add', 'sub', 'load', 'shift' and 'dc'.
