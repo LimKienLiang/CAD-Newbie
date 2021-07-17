@@ -1,10 +1,10 @@
 module counter (
-  input clk,dc,rst,
+  input clk, dc, rst,
   output count
 );
   parameter [2:0] S0 = 0, S1 = 1, S2 = 2, S3 = 3, S4 = 4;
-  reg [2:0]y,Y;
-  wire [2:0]n;
+  reg [2:0] y, Y;
+  wire [2:0] n;
   
   always @ (negedge clk, posedge rst) begin
     if (rst) begin y = S0; end
