@@ -1,3 +1,4 @@
+```
 module DU (
   input clk,
   input [3:0] CV,
@@ -13,3 +14,5 @@ module DU (
   counter u3 (.clk(clk), .dc(dc), .rst(rst), .count(count));
   ASR u4 (.shift(shift), .clk(clk), .rst(rst), .load(load), .Sum(Sum), .Q(Q), .Q1(Q1), .Q0(Q0), .A(A), .Dout(Dout));
 endmodule
+```
+In designing datapath unit, we used the technique of structural modelling. There are 4 instantiated modules containing M Register, Down Counter Register, Arithmetic Shift Right Register and Add-Subtract Register.
